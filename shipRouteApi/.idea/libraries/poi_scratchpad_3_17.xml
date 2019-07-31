@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="poi-scratchpad-3.17">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Lib/poi-3.17/poi-scratchpad-3.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

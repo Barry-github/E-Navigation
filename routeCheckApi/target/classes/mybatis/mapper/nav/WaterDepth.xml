@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.ehanghai.routecheck.nav.mapper.WaterDepthMapper">
+<resultMap id="waterdepthmap" type="cn.ehanghai.routecheck.nav.domain.WaterDepth">
+
+    <result column="lon" property="long"/>
+    <result column="lat" property="lat"/>
+    <result column="geohash" property="geohash"/>
+    <result column="resolution" property="resolution"/>
+
+
+</resultMap>
+</mapper>
+
+
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.ehanghai.routecalc.nav.mapper.HarbourMapper">
+
+
+    <resultMap id="harbourmap" type="cn.ehanghai.routecalc.nav.domain.Harbour">
+        <result column="name_lon" property="nameLon" />
+        <result column="name_lat" property="nameLat"/>
+        <result column="line_point_code" property="linePointCode"/>
+        <result column="harbour_type" property="harbourType"/>
+    </resultMap>
+
+
+</mapper>
+
+
+

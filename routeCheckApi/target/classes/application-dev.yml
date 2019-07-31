@@ -1,0 +1,52 @@
+server:
+  port: 9003
+
+spring:
+    sys-datasource:
+            type: com.alibaba.druid.pool.DruidDataSource
+            url: jdbc:mysql://ehanghai.asuscomm.com:3306/app?useUnicode=true&characterEncoding=utf-8&useSSL=false
+            username: root
+            password: ehh123456
+            driver-class-name: com.mysql.jdbc.Driver
+            max-idle: 10
+            max-wait: 10000
+            min-idle: 5
+            initial-size: 5
+            validation-query: SELECT 1
+            test-on-borrow: false
+            test-while-idle: true
+            time-between-eviction-runs-millis: 18800
+    nav-datasource:
+            type: com.alibaba.druid.pool.DruidDataSource
+            url: jdbc:mysql://192.168.50.72:3306/sea_nav_data?useUnicode=true&characterEncoding=utf-8&useSSL=false
+            username: root
+            password: ehh123456
+            driver-class-name: com.mysql.jdbc.Driver
+            max-idle: 10
+            max-wait: 10000
+            min-idle: 5
+            initial-size: 5
+            validation-query: SELECT 1
+            test-on-borrow: false
+            test-while-idle: true
+            time-between-eviction-runs-millis: 18800
+    redis:
+            host: 127.0.0.1
+            port: 6379
+            password:
+            pool:
+                  max-idle: 100
+                  min-idle: 1
+                  max-active: 1000
+                  max-wait: -1
+mapper:
+    mappers:
+         - tk.mybatis.mapper.common.Mapper
+    not-empty: false
+    identity: MYSQL
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+

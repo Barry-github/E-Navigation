@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.ehanghai.routecalc.nav.mapper.RouteLineCheckMapper">
+
+
+    <resultMap id="routelinecheckmap" type="cn.ehanghai.routecalc.nav.domain.RouteLineCheck">
+        <result column="line_id" property="lineId" />
+        <result column="line_check" property="lineCheck"/>
+        <result column="line_type" property="lineType"/>
+    </resultMap>
+
+</mapper>

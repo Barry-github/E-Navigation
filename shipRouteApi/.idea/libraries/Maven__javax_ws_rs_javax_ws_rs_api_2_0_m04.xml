@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: javax.ws.rs:javax.ws.rs-api:2.0-m04">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.0-m04/javax.ws.rs-api-2.0-m04.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.0-m04/javax.ws.rs-api-2.0-m04-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.0-m04/javax.ws.rs-api-2.0-m04-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

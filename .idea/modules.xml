@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/routeCalc/routeCalc.iml" filepath="$PROJECT_DIR$/routeCalc/routeCalc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/routeCheckApi/routeCheckApi.iml" filepath="$PROJECT_DIR$/routeCheckApi/routeCheckApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/route_planning_system.iml" filepath="$PROJECT_DIR$/.idea/route_planning_system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shipRouteApi/shipRouteApi.iml" filepath="$PROJECT_DIR$/shipRouteApi/shipRouteApi.iml" />
+    </modules>
+  </component>
+</project>

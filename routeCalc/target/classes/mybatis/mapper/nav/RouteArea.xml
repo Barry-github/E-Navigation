@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.ehanghai.routecalc.nav.mapper.RouteAreaMapper">
+<resultMap id="routeareamap" type="cn.ehanghai.routecalc.nav.domain.RouteArea">
+    <result column="id" property="id"/>
+    <result column="code" property="code"/>
+    <result column="name" property="name"/>
+    <result column="lon_min" property="lonMin"/>
+    <result column="lon_max" property="lonMax"/>
+    <result column="lat_min" property="latMin"/>
+    <result column="lat_max" property="latMax"/>
+</resultMap>
+
+
+</mapper>
+
+
+
+

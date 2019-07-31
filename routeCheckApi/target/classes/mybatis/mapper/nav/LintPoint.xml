@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.ehanghai.routecheck.nav.mapper.LinePointMapper">
+<resultMap id="linepointmap" type="cn.ehanghai.routecheck.nav.domain.LinePoint">
+    <result column="id" property="id"/>
+    <result column="code" property="code"/>
+    <result column="name" property="name"/>
+    <result column="en_name" property="enName"/>
+    <result column="lon" property="lon"/>
+    <result column="lat" property="lat"/>
+    <result column="need_broadcast" property="needBroadcast"/>
+    <result column="remark" property="remark"/>
+    <result column="importState" property="importState"/>
+
+</resultMap>
+</mapper>
+
+
+
+

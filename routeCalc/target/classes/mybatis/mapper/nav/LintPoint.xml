@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.ehanghai.routecalc.nav.mapper.LinePointMapper">
+<resultMap id="linepointmap" type="cn.ehanghai.routecalc.nav.domain.LinePoint">
+    <result column="id" property="id"/>
+    <result column="code" property="code"/>
+    <result column="name" property="name"/>
+    <result column="en_name" property="enName"/>
+    <result column="lon" property="lon"/>
+    <result column="lat" property="lat"/>
+    <result column="need_broadcast" property="needBroadcast"/>
+    <result column="remark" property="remark"/>
+    <result column="import_state" property="importState"/>
+    <result column="geohash" property="geohash"/>
+</resultMap>
+
+    <!-- 批量插入生成的兑换码 -->
+    <insert id ="insertCodeBatch" parameterType="java.util.List" >
+        <selectKey resultType ="java.lang.Integer" keyProperty= "id"
+                   order= "AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey >
+        insert into redeem_code
+        (bach_id, code, type, facevalue,create_user,create_time)
+        values
+        <foreach collection ="list" item="reddemCode" index= "index" separator =",">
+            (
+            #{reddemCode.batchId}, #{reddemCode.code},
+            #{reddemCode.type},
+            #{reddemCode.facevalue},
+            #{reddemCode.createUser}, #{reddemCode.createTime}
+            )
+        </foreach >
+    </insert >
+
+
+</mapper>
+
+
+
+

@@ -1,0 +1,16 @@
+version: '2'
+services:
+  routeCalc:
+    image: 'registry.cn-hangzhou.aliyuncs.com/ehanghai/routecalc:latest'
+    ports:
+          - "9004:9004"
+    labels:
+      aliyun.scale: '1'
+      aliyun.routing.port_9004: 'http://routeCalc'
+    restart: always
+    memswap_limit: 0
+    shm_size: 0
+    memswap_reservation: 0
+    kernel_memory: 0
+    name: routeCalc
+    hostname: routeCalc

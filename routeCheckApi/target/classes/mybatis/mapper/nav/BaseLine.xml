@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.ehanghai.routecheck.nav.mapper.BaseLineMapper">
+
+
+    <resultMap id="baselinemap" type="cn.ehanghai.routecheck.nav.domain.BaseLine">
+        <result column="start_code" property="startCode" />
+        <result column="end_code" property="endCode"/>
+        <result column="import_state" property="importState"/>
+        <result column="one_way_street" property="oneWayStreet"/>
+        <result column="waterway_width" property="waterwayWidth"/>
+    </resultMap>
+
+
+</mapper>
+
+
+

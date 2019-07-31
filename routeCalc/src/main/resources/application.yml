@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active: localhost
+---
+#开发环境配置
+spring:
+  profiles: dev
+server:
+  port: 9004
+---
+#测试环境配置
+spring:
+  profiles: test
+server:
+  port: 9004
+---
+#生产环境配置
+spring:
+  profiles: release
+server:
+  port: 9004
+---
+#本地环境配置
+spring:
+  profiles: localhost
+server:
+  port: 9004
