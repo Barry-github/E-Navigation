@@ -136,6 +136,14 @@ public class WebService {
         return lines;
     }
 
+    public static double calcDistance(String path){
+        String url = routeCalcUrl + "/nav/routecalc/calc/distance/";
+        url += path;
+        String content = sendGet(url);
+        double distance = Double.parseDouble(content);
+        return distance;
+    }
+
 
 
     public static  void checkRouteLine(List<BaseLine> baseLines)

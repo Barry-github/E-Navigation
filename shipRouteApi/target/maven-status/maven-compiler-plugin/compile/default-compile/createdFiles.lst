@@ -38,6 +38,7 @@ cn\ehanghai\route\nav\mapper\HarbourMapper.class
 cn\ehanghai\route\common\utils\WebService$3.class
 cn\ehanghai\route\nav\domain\LinePoint.class
 cn\ehanghai\route\nav\domain\RouteLineCheck.class
+cn\ehanghai\route\nav\action\NavRouteLineAction$1.class
 cn\ehanghai\route\nav\action\QueryAisAction.class
 cn\ehanghai\route\nav\service\NavLineInfoService.class
 cn\ehanghai\route\nav\domain\BackupTime.class

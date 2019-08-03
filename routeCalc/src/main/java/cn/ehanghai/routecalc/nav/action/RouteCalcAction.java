@@ -97,6 +97,23 @@ public class RouteCalcAction
     return calcRouteLines(   startCode,  endCode, shipHeight,   depth,   shipton,laneNames);
   }
 
+  //yqh:计算航线距离
+  @ResponseBody
+  @RequestMapping({"calc/distance/{path}"})
+  public String calcDistance(@PathVariable("path") String path){
+      String[] arrStr = path.split(",");
+      List<Double> doubleList = new ArrayList<Double>();
+      for (int i = 0; i < arrStr.length; i++) {
+        doubleList.add(Double.valueOf(arrStr[i]).doubleValue());
+      }
+      double distance = 0.0;
+      for (int i = 0; i < ( doubleList.size() / 2 - 1) ;i++){
+        distance += Node.GetDistBetwTwoPoint(doubleList.get(2*i),doubleList.get(2*i+1),doubleList.get(2*(i+1)),doubleList.get(2*(i+1)+1));
+      }
+      return String.valueOf(distance);
+  }
+
+
 
  /**
   * 构图重建
